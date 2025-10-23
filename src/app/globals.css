@@ -1,26 +1,231 @@
 @import "tailwindcss";
+@import "tw-animate-css";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --color-pastel-white: #fbf5e7;
+  --color-pastel-black: #332f2e;
+  --color-pastel-cream: #f6ebd5;
+  --color-pastel-red: #f6a99e;
+  --color-pastel-orange: #f8bd9f;
+  --color-pastel-yellow: #f6d69b;
+  --color-pastel-green: #c5f2d9;
+  --color-pastel-blue: #c4e7e3;
+  --color-pastel-pink: #f6d7d4;
+  --breakpoint-xs: 30rem;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-azeret-mono);
+  --font-mono: var(--font-azeret-mono);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+
+  /* fuild text */
+  --text-step--2: var(--step--2);
+  --text-step--1: var(--step--1);
+  --text-step-0: var(--step-0);
+  --text-step-1: var(--step-1);
+  --text-step-2: var(--step-2);
+  --text-step-3: var(--step-3);
+  --text-step-4: var(--step-4);
+  --text-step-5: var(--step-5);
+  --text-step-6: var(--step-6);
+  --text-step-7: var(--step-7);
+  --text-step-8: var(--step-8);
+
+  /* fuild margin spacing one pair */
+  --margin-space-4xs-3xs: var(--space-4xs-3xs);
+  --margin-space-3xs-2xs: var(--space-3xs-2xs);
+  --margin-space-2xs-xs: var(--space-2xs-xs);
+  --margin-space-xs-s: var(--space-xs-s);
+  --margin-space-s-m: var(--space-s-m);
+  --margin-space-m-l: var(--space-m-l);
+  --margin-space-l-xl: var(--space-l-xl);
+  --margin-space-xl-2xl: var(--space-xl-2xl);
+  --margin-space-2xl-3xl: var(--space-2xl-3xl);
+
+  /* fuild padding spacing one pair */
+  --padding-space-4xs-3xs: var(--space-4xs-3xs);
+  --padding-space-3xs-2xs: var(--space-3xs-2xs);
+  --padding-space-2xs-xs: var(--space-2xs-xs);
+  --padding-space-xs-s: var(--space-xs-s);
+  --padding-space-s-m: var(--space-s-m);
+  --padding-space-m-l: var(--space-m-l);
+  --padding-space-l-xl: var(--space-l-xl);
+  --padding-space-xl-2xl: var(--space-xl-2xl);
+  --padding-space-2xl-3xl: var(--space-2xl-3xl);
+
+  /* fluid border-width spacing one pair */
+  --border-width-space-4xs-3xs: var(--space-4xs-3xs);
+  --border-width-space-3xs-2xs: var(--space-3xs-2xs);
+  --border-width-space-2xs-xs: var(--space-2xs-xs);
+  --border-width-space-xs-s: var(--space-xs-s);
+  --border-width-space-s-m: var(--space-s-m);
+  --border-width-space-m-l: var(--space-m-l);
+  --border-width-space-l-xl: var(--space-l-xl);
+  --border-width-space-xl-2xl: var(--space-xl-2xl);
+  --border-width-space-2xl-3xl: var(--space-2xl-3xl);
+
+  /* fluid gap spacing one pair */
+  --gap-space-4xs-3xs: var(--space-4xs-3xs);
+  --gap-space-3xs-2xs: var(--space-3xs-2xs);
+  --gap-space-2xs-xs: var(--space-2xs-xs);
+  --gap-space-xs-s: var(--space-xs-s);
+  --gap-space-s-m: var(--space-s-m);
+  --gap-space-m-l: var(--space-m-l);
+  --gap-space-l-xl: var(--space-l-xl);
+  --gap-space-xl-2xl: var(--space-xl-2xl);
+  --gap-space-2xl-3xl: var(--space-2xl-3xl);
+
+  --spacing-space-4xs-3xs: var(--space-4xs-3xs); 
+  --spacing-space-3xs-2xs: var(--space-3xs-2xs); 
+  --spacing-space-2xs-xs: var(--space-2xs-xs);
+  --spacing-space-xs-s: var(--space-xs-s);
+  --spacing-space-s-m: var(--space-s-m);
+  --spacing-space-m-l: var(--space-m-l);
+  --spacing-space-l-xl: var(--space-l-xl);
+  --spacing-space-xl-2xl: var(--space-xl-2xl);
+  --spacing-space-2xl-3xl: var(--space-2xl-3xl);
+  
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+:root {
+  --radius: 0.625rem;
+  --background: var(--color-pastel-cream);
+  --foreground: var(--color-pastel-black);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.145 0 0);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.145 0 0);
+  --primary: oklch(0.205 0 0);
+  --primary-foreground: oklch(0.985 0 0);
+  --secondary: oklch(0.97 0 0);
+  --secondary-foreground: oklch(0.205 0 0);
+  --muted: oklch(0.97 0 0);
+  --muted-foreground: var(--color-pastel-black);
+  --accent: oklch(0.97 0 0);
+  --accent-foreground: oklch(0.205 0 0);
+  --destructive: oklch(0.577 0.245 27.325);
+  --border: var(--color-pastel-black);
+  --input: oklch(0.922 0 0);
+  --ring: var(--color-pastel-black);
+  --chart-1: oklch(0.646 0.222 41.116);
+  --chart-2: oklch(0.6 0.118 184.704);
+  --chart-3: oklch(0.398 0.07 227.392);
+  --chart-4: oklch(0.828 0.189 84.429);
+  --chart-5: oklch(0.769 0.188 70.08);
+  --sidebar: oklch(0.985 0 0);
+  --sidebar-foreground: oklch(0.145 0 0);
+  --sidebar-primary: oklch(0.205 0 0);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.97 0 0);
+  --sidebar-accent-foreground: oklch(0.205 0 0);
+  --sidebar-border: oklch(0.922 0 0);
+  --sidebar-ring: var(--color-pastel-black);
+
+  /* fuild font */
+  /* Step -2: 12.642px → 9.0045px */
+  --step--2: clamp(0.5628rem, 0.8551rem + -0.3248vw, 0.7901rem);
+  /* Step -1: 14.2222px → 12.003px */
+  --step--1: clamp(0.7502rem, 0.9285rem + -0.1981vw, 0.8889rem);
+  /* Step 0: 16px → 16px */
+  --step-0: clamp(1rem, 1rem + 0vw, 1rem);
+  /* Step 1: 18px → 21.328px */
+  --step-1: clamp(1.125rem, 1.0656rem + 0.2971vw, 1.333rem);
+  /* Step 2: 20.25px → 28.4302px */
+  --step-2: clamp(1.2656rem, 1.1195rem + 0.7304vw, 1.7769rem);
+  /* Step 3: 22.7813px → 37.8975px */
+  --step-3: clamp(1.4238rem, 1.1539rem + 1.3497vw, 2.3686rem);
+  /* Step 4: 25.6289px → 50.5174px */
+  --step-4: clamp(1.6018rem, 1.1574rem + 2.2222vw, 3.1573rem);
+  /* Step 5: 28.8325px → 67.3396px */
+  --step-5: clamp(1.802rem, 1.1144rem + 3.4381vw, 4.2087rem);
+  /* Step 6: 32.4366px → 89.7637px */
+  --step-6: clamp(2.0273rem, 1.0036rem + 5.1185vw, 5.6102rem);
+
+  /* One-up pairs */
+  /* Space 4xs-3xs: 2px → 4px */
+  --space-4xs-3xs: clamp(0.125rem, 0.0893rem + 0.1786vw, 0.25rem);
+  /* Space 3xs-2xs: 4px → 8px */
+  --space-3xs-2xs: clamp(0.25rem, 0.1786rem + 0.3571vw, 0.5rem);
+  /* Space 2xs-xs: 8px → 12px */
+  --space-2xs-xs: clamp(0.5rem, 0.4286rem + 0.3571vw, 0.75rem);
+  /* Space xs-s: 12px → 16px */
+  --space-xs-s: clamp(0.75rem, 0.6786rem + 0.3571vw, 1rem);
+  /* Space s-m: 16px → 24px */
+  --space-s-m: clamp(1rem, 0.8571rem + 0.7143vw, 1.5rem);
+  /* Space m-l: 24px → 32px */
+  --space-m-l: clamp(1.5rem, 1.3571rem + 0.7143vw, 2rem);
+  /* Space l-xl: 32px → 48px */
+  --space-l-xl: clamp(2rem, 1.7143rem + 1.4286vw, 3rem);
+  /* Space xl-2xl: 48px → 64px */
+  --space-xl-2xl: clamp(3rem, 2.7143rem + 1.4286vw, 4rem);
+  /* Space 2xl-3xl: 64px → 96px */
+  --space-2xl-3xl: clamp(4rem, 3.4286rem + 2.8571vw, 6rem);
+
+  /* work windows width/height */
+  --fluid-width-800-960: clamp(50rem, 25.3846rem + 38.4615vw, 60rem);
+  --fluid-height-480-560: clamp(30rem, 17.6923rem + 19.2308vw, 35rem);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
   }
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Azeret Mono", monospace;
+  cursor:
+    url("/cursors/cursor.png") 0 0,
+    auto;
+}
+
+div {
+  cursor:
+    url("/cursors/cursor.png") 0 0,
+    auto;
+}
+
+a,
+button {
+  cursor:
+    url("/cursors/pointer.png") 0 0,
+    pointer;
 }
