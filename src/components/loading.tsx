@@ -73,7 +73,7 @@ export default function Loading() {
       {!show && (
         <div
           ref={loadingContainer}
-          className="bg-pastel-cream absolute z-20 flex min-h-screen w-full items-center justify-center"
+          className="bg-pastel-cream absolute z-20 flex h-svh w-full items-center justify-center"
         >
           <div className="bar-border border-pastel-black border-space-4xs-3xs">
             <div
