@@ -2,7 +2,6 @@ import AboutDesktop from "@/components/desktop/about-desktop";
 import BackgroundSvg from "@/components/animated-background";
 
 import getCurrentTime from "@/utils/get-current-time";
-import Image from "next/image";
 import AboutMobile from "@/components/mobile/about-mobile";
 import ZIndexProvider from "@/components/z-index-provider";
 import WorkDesktop from "@/components/desktop/work-desktop";
@@ -17,7 +16,7 @@ import Loading from "@/components/loading";
 export default function App() {
   return (
     <>
-      {/* <Loading /> */}
+      <Loading />
 
       <div className="bg-pastel-cream p-space-s-m h-svh">
         <main className="border-pastel-black border-space-4xs-3xs flex h-full flex-col justify-center lg:justify-normal">
