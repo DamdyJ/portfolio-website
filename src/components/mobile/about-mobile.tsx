@@ -70,10 +70,10 @@ export default function AboutMobile() {
             <div className="text-step-0 mb-space-l-xl">
               interested in working with me? send me an email at{" "}
               <a
-                href="mailto:damdyjuns@gmail.com"
+                href="mailto:hi@damdyjunaedi.com"
                 className="font-bold text-orange-400 underline duration-100 ease-out hover:scale-105"
               >
-                damdyjuns@gmail.com
+                hi@damdyjunaedi.com
               </a>
             </div>
             <div>

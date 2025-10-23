@@ -54,7 +54,7 @@ export default function ContactMobile() {
               className="mb-space-l-xl"
             />
             <a
-              href="mailto:damdyjuns@gmail.com"
+              href="mailto:hi@damdyjunaedi.com"
               className="p-space-s-m bg-pastel-red mb-space-m-l border-4 font-medium drop-shadow-[4px_4px_0px_rgba(51,47,46,1)] duration-100 ease-out hover:scale-[1.02] active:translate-y-1 active:scale-[0.98] active:drop-shadow-[0px_0px_0px_rgba(51,47,46,1)]"
             >
               Send me an email

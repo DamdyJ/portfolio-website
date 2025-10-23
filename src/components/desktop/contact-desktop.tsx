@@ -35,7 +35,7 @@ export default function ContactDesktop() {
             className="mb-space-l-xl"
           />
           <a
-            href="mailto:damdyjuns@gmail.com"
+            href="mailto:hi@damdyjunaedi.com"
             className="p-space-s-m bg-pastel-red border-4 drop-shadow-[4px_4px_0px_rgba(51,47,46,1)] duration-100 ease-out hover:scale-[1.02] active:translate-y-1 active:drop-shadow-[0px_0px_0px_rgba(51,47,46,1)] mb-space-m-l font-medium active:scale-[0.98]"
           >
             Send me an email
