@@ -16,12 +16,13 @@ export default function WorkDesktop() {
         top={4}
         right={6}
       >
-        <WindowContent className="grid" style={
-          {
+        <WindowContent
+          className="grid"
+          style={{
             width: "clamp(50rem, 15.5385rem + 53.8462vw, 64rem)",
             height: "clamp(30rem, 5.3846rem + 38.4615vw, 40rem)",
-          }
-        }>
+          }}
+        >
           <>
             {/* NIGHT DANCER MOTION GRAPHIC */}
             <div className="mb-space-xl-2xl">
@@ -66,6 +67,8 @@ export default function WorkDesktop() {
                 href={
                   "https://drive.google.com/file/d/1uoygSDM5l3ZtpEr8cBl54ewCudCwgIPs/view?usp=drive_link"
                 }
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-step-1 bg-pastel-red border-pastel-black gap-space-2xs-xs border-space-4xs-3xs p-space-s-m flex items-center justify-center font-medium drop-shadow-[4px_4px_0px_rgba(51,47,46,1)]"
               >
                 <span>Watch the Video</span>
@@ -110,6 +113,8 @@ export default function WorkDesktop() {
                 href={
                   "https://drive.google.com/file/d/1hHjN9ECs4_NG6Z0Md9qEQyHGD6p0zuFk/view?usp=sharing"
                 }
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-step-1 bg-pastel-red border-pastel-black gap-space-2xs-xs border-space-4xs-3xs p-space-s-m flex items-center justify-center font-medium drop-shadow-[4px_4px_0px_rgba(51,47,46,1)]"
               >
                 <span>Explore the prototype</span>
@@ -182,6 +187,8 @@ export default function WorkDesktop() {
               </div>
               <a
                 href={"https://github.com/DamdyJ/nlp-emotion-classifier"}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-step-1 bg-pastel-red border-pastel-black gap-space-2xs-xs border-space-4xs-3xs p-space-s-m flex items-center justify-center font-medium drop-shadow-[4px_4px_0px_rgba(51,47,46,1)]"
               >
                 <span>View on Github</span>
@@ -190,7 +197,7 @@ export default function WorkDesktop() {
             </div>
           </>
         </WindowContent>
-      </DesktopApp >
+      </DesktopApp>
     </>
   );
 }

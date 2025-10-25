@@ -52,6 +52,8 @@ export default function AboutDesktop() {
             interested in working with me? send me an email at{" "}
             <a
               href="mailto:hi@damdyjunaedi.com"
+              target="_blank"
+              rel="noopener noreferrer"
               className="font-bold text-orange-400 underline duration-100 ease-out hover:scale-105"
             >
               hi@damdyjunaedi.com

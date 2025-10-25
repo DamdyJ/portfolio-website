@@ -6,6 +6,8 @@ export default function Resume() {
     <>
       <a
         href="/pdf/Resume_Template.pdf"
+        rel="noopener noreferrer"
+        target="_blank"
         download={"resume.pdf"}
         className="flex w-20 flex-col"
       >
@@ -14,7 +16,7 @@ export default function Resume() {
           alt="about image"
           width={64}
           height={64}
-          className=" self-center"
+          className="self-center"
         />
         <span className="text-step-0 white space-normal wrap-break-word text-center font-medium">
           resume.pdf

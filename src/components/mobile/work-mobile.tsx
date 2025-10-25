@@ -27,7 +27,7 @@ export default function WorkMobile() {
         </SheetTrigger>
         <SheetContent side="bottom" className="h-[90%] sm:h-[80%]">
           <SheetHeader>
-            <div className="border-b-2 p-space-s-m">
+            <div className="p-space-s-m border-b-2">
               <SheetTitle>work.exe</SheetTitle>
               <SheetClose className="ring-offset-background focus:ring-ring data-[state=open]:bg-secondary focus:outline-hidden right-space-s-m top-space-s-m absolute transition-opacity hover:opacity-100 focus:ring-2 focus:ring-offset-2 disabled:pointer-events-none">
                 <Image
@@ -85,6 +85,8 @@ export default function WorkMobile() {
                 href={
                   "https://drive.google.com/file/d/1uoygSDM5l3ZtpEr8cBl54ewCudCwgIPs/view?usp=drive_link"
                 }
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-step-1 bg-pastel-red border-pastel-black gap-space-2xs-xs border-space-4xs-3xs p-space-s-m flex items-center justify-center font-medium drop-shadow-[4px_4px_0px_rgba(51,47,46,1)]"
               >
                 <span>Watch the Video</span>
@@ -129,6 +131,8 @@ export default function WorkMobile() {
                 href={
                   "https://drive.google.com/file/d/1hHjN9ECs4_NG6Z0Md9qEQyHGD6p0zuFk/view?usp=sharing"
                 }
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-step-1 bg-pastel-red border-pastel-black gap-space-2xs-xs border-space-4xs-3xs p-space-s-m flex items-center justify-center font-medium drop-shadow-[4px_4px_0px_rgba(51,47,46,1)]"
               >
                 <span>Explore the prototype</span>
@@ -201,6 +205,8 @@ export default function WorkMobile() {
               </div>
               <a
                 href={"https://github.com/DamdyJ/nlp-emotion-classifier"}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-step-1 bg-pastel-red border-pastel-black gap-space-2xs-xs border-space-4xs-3xs p-space-s-m flex items-center justify-center font-medium drop-shadow-[4px_4px_0px_rgba(51,47,46,1)]"
               >
                 <span>View on Github</span>
