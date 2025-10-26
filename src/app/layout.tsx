@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Azeret_Mono } from "next/font/google";
-
+import type { WebPage } from "schema-dts";
 import "./globals.css";
 
 const azeretMono = Azeret_Mono({
@@ -26,9 +26,11 @@ export const metadata: Metadata = {
         url: "/opengraph-image.png",
         width: 1200,
         height: 630,
-        alt: "damdyjunaedi",
+        alt: "Damdy's Portfolio",
+        type: "image/png",
       },
     ],
+    url: "https://damdyjunaedi.com",
   },
   twitter: {
     card: "summary_large_image",
@@ -42,7 +44,8 @@ export const metadata: Metadata = {
         url: "/opengraph-image.png",
         width: 1200,
         height: 630,
-        alt: "damdyjunaedi",
+        alt: "Damdy's Portfolio",
+        type: "image/png",
       },
     ],
   },
@@ -126,8 +129,29 @@ export const metadata: Metadata = {
       },
     ],
   },
+  keywords: ["portfolio", "web developer", "damdy junaedi"],
   alternates: {
     canonical: "https://damdyjunaedi.com",
+  },
+};
+
+const jsonLd: WebPage & { "@context": string } = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  url: "https://damdyjunaedi.com",
+  name: "Damdy Junaedi — Web Developer",
+  description:
+    "Hey there! I'm Damdy, a web developer from Jakarta. This is my digital playground where I build my ideas. Feel free to look around.",
+  image: "/opengraph-image.png",
+  mainEntity: {
+    "@type": "Person",
+    name: "Damdy Junaedi",
+    url: "https://damdyjunaedi.com",
+    jobTitle: "Web Developer",
+    sameAs: [
+      "https://github.com/DamdyJ",
+      "https://www.linkedin.com/in/damdy-junaedi/",
+    ],
   },
 };
 
@@ -138,6 +162,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c"),
+        }}
+      />
       <body className={`${azeretMono.variable} antialiased`}>{children}</body>
     </html>
   );
