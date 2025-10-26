@@ -45,7 +45,7 @@ export default function AboutMobile() {
                 src={"/stylized-profile-picture.webp"}
                 width={200}
                 height={200}
-                alt="potrait"
+                alt="portrait"
                 className="aspect-square h-fit self-center"
               />
               <p className="text-step-0 text-center">
