@@ -45,7 +45,8 @@ export default function AboutMobile() {
                 src={"/stylized-profile-picture.webp"}
                 width={200}
                 height={200}
-                alt="portrait"
+                alt="Damdy Junaedi"
+                title="Damdy Junaedi"
                 className="aspect-square h-fit self-center"
               />
               <p className="text-step-0 text-center">
@@ -80,10 +81,10 @@ export default function AboutMobile() {
             </div>
             <div>
               <h2 className="text-step-2 font-bold">Education</h2>
-              <div className="text-step-0">
+              <p className="text-step-0">
                 Bachelor of Science in Computer Science <br />
                 <span className="text-step--1">Graduate cum laude 2025</span>
-              </div>
+              </p>
             </div>
           </SheetDescription>
         </SheetContent>
