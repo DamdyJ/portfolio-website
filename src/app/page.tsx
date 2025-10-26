@@ -13,6 +13,18 @@ import ContactMobile from "@/components/mobile/contact-mobile";
 import Resume from "@/components/resume";
 import Loading from "@/components/loading";
 
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Damdy's Portfolio",
+  description:
+    "Hey there! I'm Damdy, a web developer from Jakarta. This is my digital playground where I build my ideas. Feel free to look around",
+  keywords: ["portfolio", "damdy", "web developer"],
+  alternates: {
+    canonical: "https://damdyjunaedi.com",
+  },
+};
+
 export default function App() {
   return (
     <>
@@ -20,8 +32,8 @@ export default function App() {
 
       <div className="bg-pastel-cream p-space-s-m h-svh">
         <main className="border-pastel-black border-space-4xs-3xs flex h-full flex-col justify-center lg:justify-normal">
-          <div className="gap-space-l-xl z-10 mt-space-xl-2xl flex flex-col items-center justify-center  lg:m-0 lg:block lg:w-fit ">
-            <div className=" flex items-center justify-center lg:absolute lg:left-1/2 lg:top-1/2 lg:m-0 lg:-translate-x-1/2 lg:-translate-y-1/2 lg:transform">
+          <div className="gap-space-l-xl mt-space-xl-2xl z-10 flex flex-col items-center justify-center lg:m-0 lg:block lg:w-fit">
+            <div className="flex items-center justify-center lg:absolute lg:left-1/2 lg:top-1/2 lg:m-0 lg:-translate-x-1/2 lg:-translate-y-1/2 lg:transform">
               <div className="lg:mb-space-2xl-3xl">
                 <h1 className="text-step-5 text-center font-bold">
                   hi! i&apos;m damdy
@@ -32,7 +44,7 @@ export default function App() {
               </div>
             </div>
 
-            <div className="gap-space-s-m  flex flex-col items-center justify-center lg:w-fit lg:items-start lg:justify-normal">
+            <div className="gap-space-s-m flex flex-col items-center justify-center lg:w-fit lg:items-start lg:justify-normal">
               <div className="xs:grid-cols-5 xs:grid-rows-1 gap-space-s-m lg:mx-space-xs-s lg:my-space-s-m grid w-fit grid-cols-2 grid-rows-2 lg:grid-cols-1">
                 <ZIndexProvider>
                   <AboutDesktop />
@@ -61,7 +73,7 @@ export default function App() {
             <BackgroundSvg />
           </div>
         </main>
-        <footer className="fixed bottom-0 right-space-s-m hidden lg:block">
+        <footer className="right-space-s-m fixed bottom-0 hidden lg:block">
           <time className="text-step--1">{getCurrentTime()}</time>
         </footer>
       </div>
