@@ -44,7 +44,6 @@ export default function LinkDesktop() {
               href="https://www.linkedin.com/in/damdy-junaedi/"
             />
           </div>
-          x
         </WindowContent>
       </DesktopApp>
     </>
