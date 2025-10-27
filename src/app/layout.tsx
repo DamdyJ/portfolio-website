@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Azeret_Mono } from "next/font/google";
 import type { WebPage } from "schema-dts";
 import "./globals.css";
-
+import Script from "next/script";
 const azeretMono = Azeret_Mono({
   variable: "--font-azeret-mono",
   subsets: ["latin"],
@@ -162,7 +162,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <script
+      <Script
+        id="jsonLd"
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c"),
