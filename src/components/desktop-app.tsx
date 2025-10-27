@@ -41,8 +41,9 @@ export default function DesktopApp({
   const container = useRef(null);
   const windows = useRef(null);
   const timeline = useRef<gsap.core.Timeline | null>(null);
-  const [zIndex, setZIndex] = useState(0);
-  const { bringToFront } = useZIndex();
+  const { bringToFront, getCurrent } = useZIndex();
+  const [zIndex, setZIndex] = useState<number>(() => getCurrent());
+
   useGSAP(() => {
     gsap.set(windows.current, {
       scale: 0,
@@ -70,6 +71,11 @@ export default function DesktopApp({
     timeline.current?.reverse();
   });
 
+  const onWindowPointerDown = () => {
+    const z = bringToFront();
+    setZIndex(z);
+  };
+
   return (
     <div ref={container} className="hidden lg:block">
       <AppIcon
@@ -81,7 +87,16 @@ export default function DesktopApp({
         label={iconLabel}
         onClick={onOpen}
       />
-      <Window ref={windows} onClose={onClose} top={top} bottom={bottom} left={left} right={right} z={zIndex}>
+      <Window
+        ref={windows}
+        onClose={onClose}
+        top={top}
+        bottom={bottom}
+        left={left}
+        right={right}
+        z={zIndex}
+        onPointerDown={onWindowPointerDown}
+      >
         <WindowHeader>
           <WindowTitle>{windowsTitle}</WindowTitle>
           <WindowCloseButton />

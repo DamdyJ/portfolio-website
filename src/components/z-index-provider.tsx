@@ -4,6 +4,7 @@ import { createContext, useContext, useRef } from "react";
 
 type ZIndexContextProps = {
   bringToFront: () => number;
+  getCurrent: () => number;
 };
 
 const ZIndexContext = createContext<ZIndexContextProps | null>(null);
@@ -13,15 +14,17 @@ export default function ZIndexProvider({
 }: {
   children: React.ReactNode;
 }) {
-  const counter = useRef(10);
+  const counter = useRef(100);
+
+  const getCurrent = () => counter.current;
 
   const bringToFront = () => {
-    counter.current += 20;
+    counter.current += 1;
     return counter.current;
   };
 
   return (
-    <ZIndexContext.Provider value={{ bringToFront }}>
+    <ZIndexContext.Provider value={{ bringToFront, getCurrent }}>
       {children}
     </ZIndexContext.Provider>
   );

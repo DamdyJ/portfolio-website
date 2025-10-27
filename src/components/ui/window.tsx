@@ -27,6 +27,7 @@ type WindowProps = {
   bottom?: number;
   z: number;
   onClose: () => void;
+  onPointerDown?: () => void;
 };
 
 function Window({
@@ -37,6 +38,7 @@ function Window({
   z,
   children,
   className,
+  onPointerDown,
   onClose,
   ref,
   ...props
@@ -47,11 +49,18 @@ function Window({
         <div
           ref={ref}
           className={cn(
-            `bg-pastel-white z-20 fixed hidden w-fit scale-0 border-4 drop-shadow-[8px_8px_0px_rgba(51,47,46,1)] lg:block`,
+            `bg-pastel-white fixed z-20 hidden w-fit scale-0 border-4 drop-shadow-[8px_8px_0px_rgba(51,47,46,1)] lg:block`,
             className,
           )}
-          style={{ top: `${top}vw`, bottom: `${bottom}vw`, left: `${left}vw`, right: `${right}vw`, zIndex: z }}
+          style={{
+            top: `${top}vw`,
+            bottom: `${bottom}vw`,
+            left: `${left}vw`,
+            right: `${right}vw`,
+            zIndex: z,
+          }}
           {...props}
+          onPointerDown={onPointerDown}
         >
           {children}
         </div>
@@ -69,7 +78,7 @@ function WindowHeader({
     <>
       <div
         className={cn(
-          "flex items-center justify-between border-b-4 pl-space-s-m",
+          "pl-space-s-m flex items-center justify-between border-b-4",
           className,
         )}
         {...props}
@@ -80,11 +89,7 @@ function WindowHeader({
   );
 }
 
-function WindowTitle({
-  children,
-  className,
-  ...props
-}: ComponentProps<"div">) {
+function WindowTitle({ children, className, ...props }: ComponentProps<"div">) {
   return (
     <div className={cn("text-sm sm:text-base", className)} {...props}>
       {children}
@@ -95,8 +100,18 @@ function WindowTitle({
 function WindowCloseButton({ className, ...props }: ComponentProps<"button">) {
   const { onClose } = useWindowContext();
   return (
-    <button className={cn("p-space-s-m", className)} {...props} onClick={onClose}>
-      <Image src={"/icons/icon-close.svg"} alt="close" height={24} width={24} className="hover:scale-105" />
+    <button
+      className={cn("p-space-s-m", className)}
+      {...props}
+      onClick={onClose}
+    >
+      <Image
+        src={"/icons/icon-close.svg"}
+        alt="close"
+        height={24}
+        width={24}
+        className="hover:scale-105"
+      />
     </button>
   );
 }
@@ -110,7 +125,7 @@ function WindowContent({
     <>
       <div
         className={cn(
-          "[&::-webkit-scrollbar-thumb]:bg-pastel-black [&::-webkit-scrollbar-track]:border-pastel-black cursor-default overflow-y-auto p-space-s-m [&::-webkit-scrollbar-track]:border-l-4 [&::-webkit-scrollbar]:w-4",
+          "[&::-webkit-scrollbar-thumb]:bg-pastel-black [&::-webkit-scrollbar-track]:border-pastel-black p-space-s-m cursor-default overflow-y-auto [&::-webkit-scrollbar-track]:border-l-4 [&::-webkit-scrollbar]:w-4",
           className,
         )}
         {...props}
@@ -121,10 +136,4 @@ function WindowContent({
   );
 }
 
-export {
-  Window,
-  WindowHeader,
-  WindowTitle,
-  WindowCloseButton,
-  WindowContent,
-};
+export { Window, WindowHeader, WindowTitle, WindowCloseButton, WindowContent };
