@@ -50,7 +50,7 @@ export default function DesktopApp({
     });
     Draggable.create(windows.current, {
       inertia: true,
-      bounds: document.body,
+      // bounds: document.body, //remove the body boundary
     });
     timeline.current = gsap.timeline({ paused: true }).to(windows.current, {
       scale: 1,
