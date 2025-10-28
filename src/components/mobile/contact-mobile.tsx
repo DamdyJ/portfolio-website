@@ -52,6 +52,7 @@ export default function ContactMobile() {
               width={164}
               height={219}
               className="mb-space-l-xl"
+              priority
             />
             <a
               href="mailto:hi@damdyjunaedi.com"
