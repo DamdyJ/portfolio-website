@@ -42,13 +42,13 @@ export default function ContactMobile() {
             <h3 className="text-step-2 mb-space-2xs-xs font-bold">
               My Inbox is Ready
             </h3>
-            <div className="text-step-0">
+            <p className="text-step-0">
               The easiest way to reach me is by email. I&apos;m looking forward
               to hearing from you.
-            </div>
+            </p>
             <Image
               src={"/cool-cat.png"}
-              alt="a"
+              alt="A cool cat wearing sunglasses"
               width={164}
               height={219}
               className="mb-space-l-xl"

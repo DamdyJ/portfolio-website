@@ -74,11 +74,12 @@ export default function Loading() {
         <div
           ref={loadingContainer}
           className="bg-pastel-cream absolute z-20 flex h-svh w-full items-center justify-center"
+          aria-hidden="true"
         >
           <div className="bar-border border-pastel-black border-space-4xs-3xs">
             <div
               className={cn(
-                "flex gap-1 p-1 sm:gap-space-2xs-xs sm:p-space-2xs-xs",
+                "sm:gap-space-2xs-xs sm:p-space-2xs-xs flex gap-1 p-1",
                 remove ? "bg-none" : "bg-pastel-white",
               )}
             >

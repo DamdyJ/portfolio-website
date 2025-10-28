@@ -43,9 +43,14 @@ export default function WorkMobile() {
           </SheetHeader>
           <SheetDescription className="pb-space-2xl-3xl h-full overflow-y-auto overflow-x-hidden">
             {/* NIGHT DANCER MOTION GRAPHIC */}
-            <div className="mb-space-xl-2xl">
+            <section
+              className="mb-space-xl-2xl"
+              aria-labelledby="project-title-motion"
+            >
               <div className="mb-space-s-m">
-                <h2 className="text-step-3 font-bold">Music Motion Graphic</h2>
+                <h3 id="project-title-motion" className="text-step-3 font-bold">
+                  Music Motion Graphic
+                </h3>
                 <span className="text-step--1">(university exam project)</span>
               </div>
 
@@ -66,20 +71,20 @@ export default function WorkMobile() {
               </div>
 
               <div className="mb-space-m-l">
-                <div className="text-step-1 mb-space-xs-s font-bold">
+                <h4 className="text-step-1 mb-space-xs-s font-bold">
                   Tools & Tech
-                </div>
-                <div className="gap-space-xs-s flex flex-wrap text-center">
-                  <div className="border-pastel-black border-space-4xs-3xs p-space-2xs-xs flex-grow">
+                </h4>
+                <ul className="gap-space-xs-s flex flex-wrap text-center">
+                  <li className="border-pastel-black border-space-4xs-3xs p-space-2xs-xs flex-grow">
                     After Effect
-                  </div>
-                  <div className="border-pastel-black border-space-4xs-3xs p-space-2xs-xs flex-grow">
+                  </li>
+                  <li className="border-pastel-black border-space-4xs-3xs p-space-2xs-xs flex-grow">
                     Figma
-                  </div>
-                  <div className="border-pastel-black border-space-4xs-3xs p-space-2xs-xs flex-grow">
+                  </li>
+                  <li className="border-pastel-black border-space-4xs-3xs p-space-2xs-xs flex-grow">
                     Photoshop
-                  </div>
-                </div>
+                  </li>
+                </ul>
               </div>
               <a
                 href={
@@ -92,12 +97,17 @@ export default function WorkMobile() {
                 <span>Watch the Video</span>
                 <ArrowBigRight size={24} />
               </a>
-            </div>
+            </section>
 
             {/* SHOPEE REDESIGN */}
-            <div className="mb-space-xl-2xl">
+            <section
+              className="mb-space-xl-2xl"
+              aria-labelledby="project-title-shopee"
+            >
               <div className="mb-space-s-m">
-                <h2 className="text-step-3 font-bold">Shopee UI/UX Redesign</h2>
+                <h3 id="project-title-shopee" className="text-step-3 font-bold">
+                  Shopee UI/UX Redesign
+                </h3>
                 <span className="text-step--1">(university exam project)</span>
               </div>
 
@@ -118,14 +128,14 @@ export default function WorkMobile() {
               </div>
 
               <div className="mb-space-m-l">
-                <div className="text-step-1 mb-space-xs-s font-bold">
+                <h4 className="text-step-1 mb-space-xs-s font-bold">
                   Tools & Tech
-                </div>
-                <div className="gap-space-xs-s flex flex-wrap text-center">
-                  <div className="border-pastel-black border-space-4xs-3xs p-space-2xs-xs flex-grow">
+                </h4>
+                <ul className="gap-space-xs-s flex flex-wrap text-center">
+                  <li className="border-pastel-black border-space-4xs-3xs p-space-2xs-xs flex-grow">
                     Figma
-                  </div>
-                </div>
+                  </li>
+                </ul>
               </div>
               <a
                 href={
@@ -138,14 +148,17 @@ export default function WorkMobile() {
                 <span>Explore the prototype</span>
                 <ArrowBigRight size={24} />
               </a>
-            </div>
+            </section>
 
             {/* NLP */}
-            <div className="mb-space-xl-2xl">
+            <section
+              className="mb-space-xl-2xl"
+              aria-labelledby="project-title-nlp"
+            >
               <div className="mb-space-s-m">
-                <h2 className="text-step-3 font-bold">
+                <h3 id="project-title-nlp" className="text-step-3 font-bold">
                   Emotion text classification using BERT
-                </h2>
+                </h3>
                 <span className="text-step--1">
                   (university thesis project)
                 </span>
@@ -156,14 +169,14 @@ export default function WorkMobile() {
                   <div className="gap-space-2xs-xs flex flex-col sm:grid sm:grid-cols-2">
                     <Image
                       src={"/ai-dashboard-1.jpg"}
-                      alt="ai dashboard 1"
+                      alt="ai dashboard showing classification metrics"
                       width={1920}
                       height={1080}
                       className="flex-1"
                     />
                     <Image
                       src={"/ai-dashboard-2.jpg"}
-                      alt="ai dashboard 2"
+                      alt="ai dashboard showing text input and emotion output"
                       width={1920}
                       height={1080}
                       className="h-full flex-1"
@@ -179,29 +192,29 @@ export default function WorkMobile() {
               </div>
 
               <div className="mb-space-m-l">
-                <div className="text-step-1 mb-space-xs-s font-bold">
+                <h4 className="text-step-1 mb-space-xs-s font-bold">
                   Tools & Tech
-                </div>
-                <div className="gap-space-xs-s flex flex-wrap text-center">
-                  <div className="border-pastel-black border-space-4xs-3xs p-space-2xs-xs flex-grow">
+                </h4>
+                <ul className="gap-space-xs-s flex flex-wrap text-center">
+                  <li className="border-pastel-black border-space-4xs-3xs p-space-2xs-xs flex-grow">
                     Streamlit
-                  </div>
-                  <div className="border-pastel-black border-space-4xs-3xs p-space-2xs-xs flex-grow">
+                  </li>
+                  <li className="border-pastel-black border-space-4xs-3xs p-space-2xs-xs flex-grow">
                     Huggingface
-                  </div>
-                  <div className="border-pastel-black border-space-4xs-3xs p-space-2xs-xs flex-grow">
+                  </li>
+                  <li className="border-pastel-black border-space-4xs-3xs p-space-2xs-xs flex-grow">
                     Python
-                  </div>
-                  <div className="border-pastel-black border-space-4xs-3xs p-space-2xs-xs flex-grow">
+                  </li>
+                  <li className="border-pastel-black border-space-4xs-3xs p-space-2xs-xs flex-grow">
                     BERT
-                  </div>
-                  <div className="border-pastel-black border-space-4xs-3xs p-space-2xs-xs flex-grow">
+                  </li>
+                  <li className="border-pastel-black border-space-4xs-3xs p-space-2xs-xs flex-grow">
                     Transformer
-                  </div>
-                  <div className="border-pastel-black border-space-4xs-3xs p-space-2xs-xs flex-grow">
+                  </li>
+                  <li className="border-pastel-black border-space-4xs-3xs p-space-2xs-xs flex-grow">
                     NLP
-                  </div>
-                </div>
+                  </li>
+                </ul>
               </div>
               <a
                 href={"https://github.com/DamdyJ/nlp-emotion-classifier"}
@@ -212,7 +225,7 @@ export default function WorkMobile() {
                 <span>View on Github</span>
                 <ArrowBigRight size={24} />
               </a>
-            </div>
+            </section>
           </SheetDescription>
         </SheetContent>
       </Sheet>

@@ -1,5 +1,4 @@
 import React from "react";
-import VideoClip from "./ui/video-clip";
 import { ArrowBigRight } from "lucide-react";
 import Image from "next/image";
 

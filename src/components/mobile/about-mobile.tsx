@@ -34,21 +34,22 @@ export default function AboutMobile() {
                   height={24}
                   width={24}
                 />
-
                 <span className="sr-only">Close</span>
               </SheetClose>
             </div>
           </SheetHeader>
           <SheetDescription className="pb-space-2xl-3xl h-full overflow-y-auto overflow-x-hidden">
             <div className="gap-space-s-m mb-space-l-xl flex flex-col">
-              <Image
-                src={"/stylized-profile-picture.webp"}
-                width={200}
-                height={200}
-                alt="Damdy Junaedi"
-                title="Damdy Junaedi"
-                className="aspect-square h-fit self-center"
-              />
+              <figure className="self-center">
+                <Image
+                  src={"/stylized-profile-picture.webp"}
+                  width={200}
+                  height={200}
+                  alt="Portrait of Damdy Junaedi"
+                  title="Damdy Junaedi"
+                  className="aspect-square h-fit"
+                />
+              </figure>
               <p className="text-step-0 text-center">
                 Hi! I&apos;m
                 <span className="text-step-1 text-pastel-black font-bold">
@@ -60,32 +61,39 @@ export default function AboutMobile() {
                 product.
               </p>
             </div>
-            <div className="gap-space-2xs-xs mb-space-l-xl flex flex-col">
-              <h2 className="text-step-2 font-bold">What I Do...</h2>
+
+            <section
+              className="gap-space-2xs-xs mb-space-l-xl flex flex-col"
+              aria-labelledby="what-i-do-heading"
+            >
+              <h3 id="what-i-do-heading" className="text-step-2 font-bold">
+                What I Do...
+              </h3>
               <ul className="text-step-0 ml-space-s-m space-y-space-2xs-xs list-disc">
                 <li>create ui design & prototypes in Figma,</li>
                 <li>build responsive frontends with Next.js / React,</li>
                 <li>and implement APIs & backend with Express</li>
               </ul>
-            </div>
-            <div className="text-step-0 mb-space-l-xl">
+            </section>
+            <p className="text-step-0 mb-space-l-xl">
               interested in working with me? send me an email at{" "}
               <a
                 href="mailto:hi@damdyjunaedi.com"
-                target="_blank"
-                rel="noopener noreferrer"
                 className="font-bold text-orange-400 underline duration-100 ease-out hover:scale-105"
               >
                 hi@damdyjunaedi.com
               </a>
-            </div>
-            <div>
-              <h2 className="text-step-2 font-bold">Education</h2>
-              <p className="text-step-0">
-                Bachelor of Science in Computer Science <br />
-                <span className="text-step--1">Graduate cum laude 2025</span>
-              </p>
-            </div>
+            </p>
+
+            <section aria-labelledby="education-heading">
+              <h3 id="education-heading" className="text-step-2 font-bold">
+                Education
+              </h3>
+              <div className="text-step-0">
+                <p>Bachelor of Science in Computer Science</p>
+                <p className="text-step--1">Graduate cum laude, 2025</p>
+              </div>
+            </section>
           </SheetDescription>
         </SheetContent>
       </Sheet>
