@@ -48,6 +48,7 @@ export default function AboutMobile() {
                   alt="Portrait of Damdy Junaedi"
                   title="Damdy Junaedi"
                   className="aspect-square h-fit"
+                  priority
                 />
               </figure>
               <p className="text-step-0 text-center">

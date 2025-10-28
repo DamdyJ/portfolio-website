@@ -15,7 +15,7 @@ export default function LinkDesktop() {
         left={12}
       >
         <WindowContent className="flex items-center justify-center">
-          <div className="flex gap-10">
+          <div className="flex flex-col gap-10 sm:flex-row">
             <IconLink
               image={{
                 src: "/icons/icon-instagram.svg",
