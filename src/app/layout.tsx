@@ -10,44 +10,11 @@ const azeretMono = Azeret_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Damdy's Portfolio",
-  description:
-    "Hey there! I'm Damdy, a web developer from Jakarta. This is my digital playground where I build my ideas. Feel free to look around",
   metadataBase: new URL("https://damdyjunaedi.com"),
   openGraph: {
     siteName: "Damdy's Portfolio",
     type: "website",
     locale: "id_ID",
-    title: "Damdy's Portfolio",
-    description:
-      "Hey there! I'm Damdy, a web developer from Jakarta. This is my digital playground where I build my ideas. Feel free to look around.",
-    images: [
-      {
-        url: "/opengraph-image.png",
-        width: 1200,
-        height: 630,
-        alt: "Damdy's Portfolio",
-        type: "image/png",
-      },
-    ],
-    url: "https://damdyjunaedi.com",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Damdy's Portfolio",
-    description:
-      "Hey there! I'm Damdy, a web developer from Jakarta. This is my digital playground where I build my ideas. Feel free to look around.",
-    creator: "@damdyjunaedi",
-    site: "@damdyjunaedi",
-    images: [
-      {
-        url: "/opengraph-image.png",
-        width: 1200,
-        height: 630,
-        alt: "Damdy's Portfolio",
-        type: "image/png",
-      },
-    ],
   },
   robots: {
     index: true,
@@ -128,10 +95,6 @@ export const metadata: Metadata = {
         type: "image/png",
       },
     ],
-  },
-  keywords: ["portfolio", "web developer", "damdy junaedi"],
-  alternates: {
-    canonical: "https://damdyjunaedi.com",
   },
 };
 

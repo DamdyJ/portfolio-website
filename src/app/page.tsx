@@ -20,6 +20,37 @@ export const metadata: Metadata = {
   description:
     "Hey there! I'm Damdy, a web developer from Jakarta. This is my digital playground where I build my ideas. Feel free to look around",
   keywords: ["portfolio", "damdy", "web developer"],
+  openGraph: {
+    url: "https://damdyjunaedi.com",
+    type: "website",
+    title: "Damdy's Portfolio",
+    description:
+      "Hey there! I'm Damdy, a web developer from Jakarta. This is my digital playground where I build my ideas. Feel free to look around.",
+    images: [
+      {
+        url: "/opengraph-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Damdy's Portfolio",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Damdy's Portfolio",
+    description:
+      "Hey there! I'm Damdy, a web developer from Jakarta. This is my digital playground where I build my ideas. Feel free to look around.",
+    creator: "@damdyjunaedi",
+    site: "@damdyjunaedi",
+    images: [
+      {
+        url: "/opengraph-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Damdy's Portfolio",
+      },
+    ],
+  },
   alternates: {
     canonical: "https://damdyjunaedi.com",
   },
