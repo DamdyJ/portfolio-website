@@ -28,8 +28,6 @@ export default function Loading() {
     width -= totalPadding;
     height -= totalPadding;
 
-    gsap.set(".bar", { opacity: 0 });
-
     const tl = gsap.timeline({
       onComplete: contextSafe
         ? contextSafe(() => {
@@ -86,7 +84,7 @@ export default function Loading() {
               {new Array(10).fill(0).map((_, i) => (
                 <div
                   key={i}
-                  className="bar bg-pastel-black h-8 w-3 sm:h-10 sm:w-4"
+                  className="bar bg-pastel-black h-8 w-3 sm:h-10 sm:w-4 opacity-0"
                   aria-hidden
                 />
               ))}
