@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Azeret_Mono } from "next/font/google";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { WebPage } from "schema-dts";
 import "./globals.css";
 import Script from "next/script";
@@ -132,7 +133,10 @@ export default function RootLayout({
           __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c"),
         }}
       />
-      <body className={`${azeretMono.variable} antialiased`}>{children}</body>
+      <body className={`${azeretMono.variable} antialiased`}>
+        {children}
+        <SpeedInsights />
+      </body>
     </html>
   );
 }
