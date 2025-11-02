@@ -7,7 +7,6 @@ import Script from "next/script";
 const azeretMono = Azeret_Mono({
   variable: "--font-azeret-mono",
   subsets: ["latin"],
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
 });
 
 export const metadata: Metadata = {
@@ -15,7 +14,7 @@ export const metadata: Metadata = {
   openGraph: {
     siteName: "Damdy's Portfolio",
     type: "website",
-    locale: "id_ID",
+    locale: "en_US",
   },
   robots: {
     index: true,
@@ -30,11 +29,6 @@ export const metadata: Metadata = {
     title: "Damdy's Portfolio",
     statusBarStyle: "default",
     capable: true,
-  },
-  verification: {
-    google: "google",
-    yandex: "yandex",
-    yahoo: "yahoo",
   },
   icons: {
     icon: [
