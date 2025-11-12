@@ -1,36 +1,75 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🌐 Damdy Junaedi — Portfolio Website
 
-## Getting Started
+![Website Screenshot](https://www.damdyjunaedi.com/opengraph-image.png)
 
-First, run the development server:
+### 🚀 Live Site
+👉 [www.damdyjunaedi.com](https://www.damdyjunaedi.com)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🧭 Overview
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+This is my personal portfolio website — a showcase of my work, background, and creative projects.  
+Built to highlight my skills as a developer/designer and provide an easy way to connect with me.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🛠️ Tech Stack
 
-To learn more about Next.js, take a look at the following resources:
+- **Framework:** Next.js  
+- **Styling:** Tailwind CSS  
+- **Deployment:** Vercel  
+- **Animations:** Gsap
+- **Icons:** Lucide
+- **UI Library:** ShadcnUi
+  
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## ✨ Features
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Fully responsive design for all devices  
+- Smooth animations and transitions  
+- SEO optimized pages  
+- Interactive project showcase  
+- Contact section with direct links to my socials
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📸 Preview
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+You can view a full screenshot above — or visit the live site for the complete experience.
+
+---
+
+## 🧑‍💻 About Me
+
+Hi, I’m **Damdy Junaedi** — a developer passionate about building clean, user-focused digital experiences.  
+My portfolio reflects both my technical skillset and design sensibility.
+
+- 🌍 Based in Indonesia 
+- 💼 Open to collaboration or new opportunities  
+- 📫 Reach me at: hi@damdyjunaedi.com
+
+---
+
+## 🔗 Connect with Me
+
+- [LinkedIn](https://www.linkedin.com/in/damdy-junaedi/)
+- [GitHub](https://github.com/DamdyJ)
+- [Portfolio](https://www.damdyjunaedi.com)
+
+---
+
+### 🖥️ Deployment
+
+This repository is used solely for **Vercel deployment**.  
+Source code and continuous updates are managed through this repo for hosting automation.
+
+---
+
+### 📄 License
+
+This project is **private** and serves as my personal portfolio site.  
+Please do not reuse or copy the design/code without permission.
+
+---
